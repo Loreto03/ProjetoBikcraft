@@ -1,0 +1,9 @@
+#contato
+{
+    background: var(--cor-1) ;
+}
+
+.contato
+{
+    grid-template-columns: 5fr 7fr;
+}

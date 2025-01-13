@@ -1,0 +1,47 @@
+body
+{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 2000px;
+    color: #1111;
+}
+
+h1, 
+h2,
+h3,
+H4,
+
+ul, 
+p,
+blockquote,
+dd
+
+{
+    margin: 0px;
+    
+}
+
+ul
+{
+    padding: 0px;
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit; /*determina que a cor vai ser herdada do pai.*/
+}
+
+img
+{
+    max-width: 100%; /*foi usado para as imagens não ficarem muito grande*/
+    display: block; /*A propriedade display: inline-block; no CSS é usada para alterar o comportamento de exibição de um elemento. Ela combina características dos elementos inline e block.*/
+    
+}
+
+img[src$=".jpg"]
+{
+    border-radius: 4px;
+}
+

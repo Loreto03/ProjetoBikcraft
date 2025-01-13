@@ -1,0 +1,93 @@
+.header-bg
+{
+    background-color: var(--cor-12);
+}
+
+.header
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box; /*pesquisar sobre o que seria isso*/
+    padding: 20px;
+    max-width: 1200px; /*pesquisar sobre o que seria isso*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-menu
+{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.header-menu a
+{
+    color: white;
+    display: inline-block; /*<!-- Os elementos aparecem na mesma linha, mas podem ter largura, altura e outras propriedades de bloco*/
+    padding: 16px 0px;
+    font-size: 18px;
+    position: relative;
+
+}
+
+.header-menu a::after /*sublinhado com animação*/
+{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0px;
+    background: var(--cor-0);
+    margin-top: 4px;
+    transition: 0.3s;
+    position: absolute; /*tira ele do fluxo dos demais itens*/
+}
+
+.header-menu a:hover::after
+{
+    width: 100%;
+}
+
+.header-menu a:hover
+{
+    background-color: #2e2e2e;
+}
+
+@media (max-width: 800px)
+{
+    .header-menu
+    {
+        
+    }
+    .header-menu a
+    {
+        background: var(--cor-11);
+        padding: 12px 16px;
+        border-radius: 4px;
+    }
+    .header-menu a:hover::after,
+    .header-menu a.ativo::after
+    {
+        background-color: var(--cor-10);
+    }
+    .header a::after
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .header-menu
+    {
+        gap: 12px
+    };
+    .header-menu a
+    {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
